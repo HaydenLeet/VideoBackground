@@ -12,3 +12,63 @@ body {
     font-family: 'Nunito', sans-serif;
     line-height: 1.5;
 }
+
+h1 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #4b5163;
+}
+
+#main {
+    position: relative;
+    /* VH (Viewport Height) determines the height of the element by setting it to a percentage of the viewport */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./Media/cover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* width: 100%; */
+    
+    /* The object fit property determines how a vision or image in resized to fit inside its container. Setting the value to "cover" causes the video to retain aspect ratio and fill the given dimension */
+    object-fit: cover;
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#content {
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+}
